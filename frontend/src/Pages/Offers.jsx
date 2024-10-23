@@ -1,7 +1,6 @@
 import mensOffer from '../assets/bannermens.png'
 import womensoffer from '../assets/bannerwomens.png'
 import kidsoffer from '../assets/bannerkids.png'
-import offer from '../assets/banneroffer.png'
 import React from 'react'
 
 const Offers = () => {

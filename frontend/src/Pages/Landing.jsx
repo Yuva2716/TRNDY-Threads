@@ -12,8 +12,7 @@ const Landing = () => {
     <>
       <Navbar />
       <Offers />
-      <HomeProducts />
-      {/* <Delivery /> */}
+      <HomeProducts />      
       <Footer />
     </>
   )

@@ -11,7 +11,7 @@ import cashimg from '../assets/icons8-cash-48.png'
 const Delivery = ({calculateTotalPrice}) => {
      const [cartItems,setCartItems] = useState([])   
     const handlePlaceOrder = async () => {
-        const response = await fetch('http://localhost:5000/cart',{
+        const response = await fetch('https://trndy-threads.onrender.com/cart',{
           method:"DELETE",
         })
         if (response.ok){

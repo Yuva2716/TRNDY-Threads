@@ -9,7 +9,7 @@ const Products = () => {
   const [loading, setLoading] = useState(true)  
 
   const getProducts = async () => {
-    const response = await fetch('http://localhost:5000/products')
+    const response = await fetch('https://trndy-threads.onrender.com/products')
     const result = await response.json()
     if(result.status == 200){
       setProducts(result.products);
