@@ -53,7 +53,7 @@ const Admin = () => {
   return (
     <>
       <Navbar />
-      <div className='Admin-page'>        
+      <div className='container-fluid Admin-page'>        
         <form className='Add-product-form' onSubmit={handleSubmit}>
           <h2 className='text-center text-light'>Add new Products</h2>
           <label>Product Title</label>

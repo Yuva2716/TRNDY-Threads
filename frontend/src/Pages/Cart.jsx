@@ -106,7 +106,7 @@ const Cart = () => {
       return(
         <>
           <Navbar />
-            <div className='d-flex justify-content-center Loading-btn'>       
+            <div className='container-fluid d-flex justify-content-center Loading-btn'>       
               <button className="btn btn-dark" type="button" disabled>
                 <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
@@ -119,14 +119,14 @@ const Cart = () => {
   return (
     <>
       <Navbar />
-      <div className="cart-page bg-secondary">        
+      <div className="container-fluid cart-page bg-secondary">        
         {cartItems.length===0 ? (          
           <div className='text-center empty-cart'>
               <span className='empty-cart-icon'><BsFillCartXFill /></span>
              <h1>Your Cart is Empty</h1>
           </div>
         ):(
-          <div className='d-flex'>
+          <div className='container-fluid d-flex'>
             <div className="cart-list p-1">
             <h2 className='text-center text-light'>Your Cart <BiSolidCartAdd /> </h2>
               {cartItems.map(item =>(
