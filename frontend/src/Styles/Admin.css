@@ -1,0 +1,39 @@
+.Admin-page{
+    height: 100vh;    
+    background: url(../assets/Adminbg3.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    overflow-x:hidden;
+}
+
+.Add-product-form{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;    
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
+}
+
+.Add-product-form > label{
+    color: whitesmoke;
+}
+
+.Add-product-form > input,textarea{
+    margin-bottom: 15px;
+}
+
+.Add-product-form > textarea{
+    height: 70px;
+}
+
+.Add-product-form > button{
+    background-color: yellowgreen;
+    padding: 5px;
+    border: none;
+    border-radius: 6px;
+}

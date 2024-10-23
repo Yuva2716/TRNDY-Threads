@@ -1,0 +1,22 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+footer{
+    height: 35px;
+}
+
+.footer-text-1{
+    margin-top: 10px;
+}
+
+.footer-text-2{
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.sm-logos{
+    cursor: pointer;
+}

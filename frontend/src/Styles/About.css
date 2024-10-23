@@ -1,0 +1,38 @@
+.about-page{       
+    display: flex;
+    flex-direction: column;
+}
+
+.content-1{
+    margin: 40px 0 20px 40px;    
+}
+
+.content-2{
+    margin: 40px 0 20px 200px;    
+}
+.img-1>img{
+    width: 300px;    
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.img-2>img{
+    width: 350px;    
+    margin-left: 80px;
+}
+
+.img-3>img{
+    width: 300px;    
+    margin-left: 80px;
+}
+
+.img-4>img{
+    width: 350px;    
+    margin-left: 80px;
+}
+
+.img-5>img{
+    width: 300px;    
+    margin-left: 80px;
+    border-radius: 50%;
+}

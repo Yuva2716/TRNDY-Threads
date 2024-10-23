@@ -1,0 +1,55 @@
+.Delivery-page{
+    display: flex;
+    justify-content: center;    
+}
+
+.names{
+    margin-bottom: 20px;
+}
+
+.form-con{
+    position: fixed;
+}
+
+.Delivery-form{    
+    height: 70vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;        
+}
+
+.input-field{
+    width: 15vw;
+    margin-bottom: 20px;    
+}
+
+.address{
+    margin-left: 15px;
+    width: 15vw;
+    height: 70px;
+}
+
+.input-pincode{
+    width: 15vw;
+    margin-left: 33px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.total-price{
+    margin-left: 10px;
+    font-size: 1.3rem;
+}
+
+.Cod-btn{
+    background-color: yellowgreen;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    width: 200px;
+    margin-left: 70px;    
+}
+
+

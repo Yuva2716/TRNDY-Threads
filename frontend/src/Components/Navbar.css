@@ -1,0 +1,27 @@
+nav{
+    height: 65px;
+}
+
+img{
+    cursor: pointer;
+}
+.nav-link{
+    cursor: pointer;
+    transition: .5s ease;
+    font-size: 19px;
+    color: gold;
+}
+
+Link{
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    text-decoration: underline 2px;    
+}
+
+.badge{
+    font-size: 18px;
+    margin-top: 5px;
+    cursor: pointer;
+}
