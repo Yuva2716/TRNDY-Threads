@@ -5,17 +5,30 @@ import dotenv from 'dotenv'
 
 
 const app = express()
+
+// Middleware configuration
 app.use(cors())
 app.use(express.json({limit:'10mb'}))
 app.use(express.urlencoded({limit:'10mb',extended:true}))
+
+// Load environment variables
 dotenv.config()
 
-const client = new MongoClient(process.env.MONGODB_URL)
+// Ensure environment variable is correctly loaded
+
+const connectionString = process.env.MONGODB_CONNECTION_STRING;
+if (!connectionString) {
+  console.error("MongoDB connection string is missing. Please check your .env file.");
+  process.exit(1);
+}
+
+const client = new MongoClient(connectionString)
 
 let ProductCollection;
 let CartCollection
 
 const main = async () => {
+
         await client.connect().then(console.log("Successfully connect with Database")).catch(err=>console.log(err));
         ProductCollection = client.db("projectdatabase").collection('products')
         CartCollection = client.db("projectdatabase").collection("carts")        
