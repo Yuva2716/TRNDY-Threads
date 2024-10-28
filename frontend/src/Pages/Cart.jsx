@@ -126,13 +126,13 @@ const Cart = () => {
              <h1>Your Cart is Empty</h1>
           </div>
         ):(
-          <div className='container-fluid d-flex'>
-            <div className="cart-list p-1">
-            <h2 className='text-center text-light'>Your Cart <BiSolidCartAdd /> </h2>
+          <div className='container-fluid d-flex cart-delivery'>
+            <div className="cart-list">
+            <h2 className='text-center text-light'>Your Cart<BiSolidCartAdd /> </h2>
               {cartItems.map(item =>(
                   <div key={item._id} className="cart-item d-inline-block my-3 mx-3">
-                      <div className="card" style={{width:"15rem"}}>
-                      <img src={item.image} style={{height:"14rem"}} className="card-img-top" alt={item.title} />
+                      <div className="card" >
+                      <img src={item.image}  className="card-img-top" alt={item.title} />
                     <div className="card-body">
                       <h5 className="card-title">{item.title}</h5>                      
                       <div className="product-price-add">

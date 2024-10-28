@@ -4,7 +4,8 @@
 }
 
 .content-1{
-    margin: 40px 0 20px 40px;    
+    margin: 40px 0 20px 40px;
+    width: 50%;    
 }
 
 .content-2{
@@ -35,4 +36,140 @@
     width: 300px;    
     margin-left: 80px;
     border-radius: 50%;
+}
+
+.text-1>.content-1>p{
+    font-size: 1.35rem;
+}
+.text-2>.content-2>p{
+    font-size: 1.35rem;
+}
+.text-3>.content-3>p{
+    font-size: 1.35rem;
+}
+.text-4>.content-4>p{
+    font-size: 1.35rem;
+}
+.text-5>.content-5>p{
+    font-size: 1.35rem;
+}
+
+
+@media only screen and (max-width: 400px) {    
+    .about-page>.text-1{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .text-1>.img-1>img{
+        width: 250px;    
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    .text-1>.content-1{
+        margin: 5px;                
+        width: 100%;        
+    }
+
+    .text-1>.content-1>h3{
+        font-size: 1.2rem;
+    }
+    .text-1>.content-1>p{
+        font-size: 1.0rem;
+    }
+
+
+
+    .about-page>.text-2{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .text-2>.img-2>img{
+        width: 250px;    
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    .text-2>.content-2{
+        margin: 5px;                
+        width: 100%;        
+    }
+
+    .text-2>.content-2>h3{
+        font-size: 1.3rem;
+    }
+    .text-2>.content-2>p{
+        font-size: 1.1rem;
+    }
+
+
+    .about-page>.text-3{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .text-3>.img-3>img{
+        width: 250px;    
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    .text-3>.content-3{
+        margin: 5px;                
+        width: 100%;        
+    }
+
+    .text-3>.content-3>h3{
+        font-size: 1.2rem;
+    }
+    .text-3>.content-3>ol>li{
+        font-size: 1.0rem;
+    }
+
+
+    .about-page>.text-4{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .text-4>.img-4>img{
+        width: 250px;    
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    .text-4>.content-4{
+        margin: 5px;                
+        width: 100%;        
+    }
+
+    .text-4>.content-4>h3{
+        font-size: 1.3rem;
+    }
+    .text-4>.content-4>p{
+        font-size: 1.1rem;
+    }
+
+
+    .about-page>.text-5{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .text-5>.img-5>img{
+        width: 250px;    
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    .text-5>.content-5{
+        margin: 5px;                
+        width: 100%;        
+    }
+
+    .text-5>.content-5>h3{
+        font-size: 1.2rem;
+    }
+    .text-5>.content-5>p{
+        font-size: 1.0rem;
+    }
+
+
 }

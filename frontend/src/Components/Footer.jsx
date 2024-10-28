@@ -9,17 +9,17 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-        <footer className='navbar navbar-expand-lg navbar-dark bg-dark text-warning d-flex justify-content-around'>
+        <div className='container-fluid bg-dark text-warning d-flex justify-content-around footer'>
             <p className='footer-text-1'>© 2024 TRNDY Threads. All rights reserved.</p>
-                <div className="sm-logos fs-4 d-flex gap-3 w-25">
+                <div className="sm-logos">
                     <FaFacebook />
                     <FaSquareXTwitter />
                     <FaSquareInstagram />
                     <FaYoutube /> 
                     <FaLinkedin />
                 </div>
-            <p className='footer-text-2'>Terms & Conditions <span>Policy</span></p>
-        </footer>
+            <p className='footer-text-2'>Terms & Conditions <span> Policy</span></p>
+        </div>
     </>
   )
 }

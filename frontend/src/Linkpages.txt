@@ -1,0 +1,8 @@
+Local Host : http://localhost:5000/
+Backend link:  https://trndy-threads.onrender.com
+Components/ProductCart 1
+Pages/Admin 1
+Pages/Cart 4
+Pages/Delivery 1
+Pages/Products 1
+

@@ -20,6 +20,12 @@
 
 }
 
+.container-login>h1{    
+    margin-bottom: 50px;
+    color: black;
+    text-align: center;
+}
+
 .input-login{
     border: none;
     border-radius: 20px;
@@ -45,5 +51,18 @@
 .para-login{
     font-size: 1.1rem;
     font-family: sans-serif;
+    color: white;
 }
 
+
+@media only screen and (max-width: 400px){
+    .container-login{
+        width: 130%;    
+        margin: 18% 2%;
+    }
+    .para-login{
+        font-size: 0.90rem;
+        font-family: sans-serif;
+        color: white;
+    }
+}

@@ -1,15 +1,14 @@
 .Delivery-page{
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    
 }
+
 
 .names{
     margin-bottom: 20px;
 }
 
-.form-con{
-    position: fixed;
-}
 
 .Delivery-form{    
     height: 70vh;
@@ -52,4 +51,148 @@
     margin-left: 70px;    
 }
 
+.gpayimg,.paytmimg{
+  width: 35px;
+  margin-right: 12px;
+}
 
+
+.form-check-input{
+  float: inline-end;
+}
+
+
+.upi-mb-1,.upi-mb-2{
+  display: none;
+}
+
+@media only screen and (max-width: 400px){
+    .form-con {
+        padding: 10px;
+
+      }
+    
+      .Delivery-form {
+        width: 100%;
+        min-height: 100vh;
+        padding: 10px;
+        
+      }
+      .Delivery-form>.names>input{
+         width: 110px;         
+      }
+      .Delivery-form>.addressPin>input{
+        width: 225px;
+        margin-top: 5px;
+        margin-left: 1px;
+     }
+     .Delivery-form>.addressPin{
+      display: flex;
+      flex-direction: column;      
+     }
+     .Delivery-form>.addressPin>textarea{
+      width: 225px;      
+      margin-left: 2px;      
+   }    
+      .Delivery-form>.numbers>input{
+        width: 110px;
+        margin-top: -15px;
+     }
+      .names input, .numbers input, .addressPin textarea, .addressPin input {
+        width: 120%;                      
+        margin-bottom: 10px;                
+        
+      }
+    
+      .pay-methods h4 {
+        font-size: 1.2rem;
+      }
+    
+      .accordion-button {
+        font-size: 1rem;
+      }
+    
+      .accordion-body input, .accordion-body button {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    
+      .price {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .price h5 {
+        margin-bottom: 10px;
+        margin-left: 40px;
+      }
+    
+      .Cod-btn {
+        width: 75%;
+        margin-top: 10px;
+        margin-right: 20px;
+      }
+       
+      .cardimg,.bhimimg,.cashimg{
+        width: 30px;
+        height: 40px;
+      }
+      
+      .gpayimg,.paytmimg{
+        width: 30px;
+        height: 30px;
+      }
+
+      .upi-methods>h5{
+        display: none;
+     }
+
+     .upi-methods>button{
+      margin-top: 10px;
+      
+     }
+
+      .upi-mb-1{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .upi-mb-1>h5{
+        font-size: 1.2rem;
+        flex-wrap: nowrap;
+      }
+
+      .upi-mb-1>input{
+        width: 15px;
+        
+      }
+          
+
+      .upi-mb-2{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+      }
+
+      .upi-mb-2>h5{
+        font-size: 1.2rem;
+        flex-wrap: nowrap;
+      }
+
+      .upi-mb-2>input{
+        width: 15px;
+        
+      }
+
+      .COD-accod{
+        margin-top: 2.9rem;
+      }
+      
+      .form-check>.form-check-input{
+        width: 15px;
+      }
+
+      
+}

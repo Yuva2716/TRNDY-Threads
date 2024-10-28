@@ -42,13 +42,13 @@ const Login = () => {
   return (
     <div className="login-page">
             <div className="container-login">
-                <h1 className="mb-4 text-dark text-center">Login Here !!</h1>
+                <h1>Login Here !!</h1>
                 <input className="input-login" onChange={(e)=>{setUser(e.target.value)}}   placeholder="Enter your e-mail"></input>
                 <br />
                 <input className="input-login" onChange={(e)=>{setPass(e.target.value)}}  placeholder="Enter your Password"></input>
                 <br />
                 <button className="btn-login" onClick={loginfunc} >Login</button>
-                <p className="text-light para-login">If you don't have a account <Link className="text-dark fw-bold" to={'/signup'}>Singup</Link> here</p>        
+                <p className="para-login">If you don't have a account <Link className="text-dark fw-bold" to={'/signup'}>Singup</Link> here</p>        
             </div>
     </div>
     

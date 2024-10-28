@@ -8,20 +8,27 @@
     height: 100%; /* Full container height */
     scrollbar-width: none;
 }
+.cart-list>.cart-item>.card{
+    width: 14.5rem;
+    
+}
+
+.cart-list>.cart-item>img{
+    height: 13.5rem;
+    
+}
 
 .empty-cart{
     padding-top: 10%;
 }
 
-.empty-cart-icon{
-    
+.empty-cart-icon{    
     padding: 50px;    
     font-size: 10rem;
     border-radius: 50%;
     background-color: #dadada;
     color: red;
-    box-shadow: 0 0 30px rgba(0,0,0, .1);
-    
+    box-shadow: 0 0 30px rgba(0,0,0, .1);    
 }
 
 .empty-cart>h1{
@@ -42,16 +49,45 @@
 .delivery-details{
     padding: 5px;       
     align-items: end;    
-    width: 41%; /* Adjust as needed */        
+    width: 45%; /* Adjust as needed */        
     top: 0; /* Stick to the top */
     position: sticky;
-    min-height: 110vh; /* Full container height */
+    min-height: 96vh; /* Full container height */
     overflow-y: hidden; /* Prevent scrolling */
-    overflow-x: hidden;
-    /* background: url(../assets/OIP.jpg);
-    background-size: cover;
-    background-position: center; */
+    margin-right: -23px;
+    border: 2px solid black;
+    
 }
 
 
 
+
+@media only screen and (max-width: 400px) {
+    .empty-cart{
+        padding-top: 35%;
+    }
+
+    .empty-cart-icon{
+        padding: 35px;
+        font-size: 7rem;
+    }
+
+    .cart-list{    
+        width: 100%;
+        overflow-y: auto; /* Enable vertical scroll */
+        height: 100%; /* Full container height */
+        
+    }
+    .delivery-details{        
+        padding: 5px;                      
+        width: 100%; /* Adjust as needed */                
+        position: relative;
+        min-height: 90vh; /* Full container height */                        
+    }
+    .cart-delivery{        
+        flex-direction: column;
+
+    }
+    
+
+}

@@ -27,7 +27,7 @@ const Delivery = ({calculateTotalPrice}) => {
 
   return (
     <>            
-            <div className="form-con">
+            <div className="form-con container-fluid">
             
             <form className='Delivery-form'>            
                 <h4 className='text-start fs-5 fw-bold'>Delivery Address <TbTruckDelivery /></h4>
@@ -86,7 +86,7 @@ const Delivery = ({calculateTotalPrice}) => {
                     <div className="accordion accordion-flush" id="accordionFlushExample">
                         <div className="accordion-item">
                             <h2 className="accordion-header d-flex" id="flush-headingOne">
-                            <img src={cardimg} alt="cardimg" />
+                            <img src={cardimg} alt="cardimg" className='cardimg' />
                             <button className="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                 Credit / Debit Card 
                             </button>
@@ -117,33 +117,46 @@ const Delivery = ({calculateTotalPrice}) => {
                         
                         <div className="accordion-item">
                             <h2 className="accordion-header d-flex" id="flush-headingTwo">
-                            <img src={bhimimg} alt="bhimimg" />
+                            <img src={bhimimg} alt="bhimimg" className='bhimimg' />
                             <button className="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                 UPI Methods
                             </button>
                             </h2>
                             <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div className="accordion-body">
-                                <h5 htmlFor='flexRadioDefault' >
-                                    <img src={gpayimg}  style={{width:"30px",marginRight:"12px"}} />
+                            <div className="accordion-body upi-methods">
+                                <h5>
+                                    <img src={gpayimg} className='gpayimg' />
                                         Google Pay
-                                        <input className="form-check-input float-end" type="radio" name="flexRadioDefault" id="flexRadioDefault"></input>
-                                </h5>                                
-                                
-                                <h5 htmlFor='flexRadioDefault1' >
-                                    <img src={paytming}  style={{width:"35px",marginRight:"10px"}} />
+                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault"></input>
+                                </h5>                                                                  
+                                                                                                
+                                <h5>
+                                    <img src={paytming} className='paytmimg' />
                                         Paytm                                        
-                                        <input className="form-check-input float-end" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></input>
+                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></input>
                                 </h5>
+
+                                <div className="upi-mb-1">
+                                    <img src={gpayimg} className='gpayimg' />
+                                    <h5>Google Pay</h5>
+                                    <input type="radio" name='upi' />
+                                </div>
+                                <div className="upi-mb-2">
+                                    <img src={paytming} className='paytmimg' />
+                                    <h5>Paytm</h5>
+                                    <input type="radio" name='upi' />
+                                </div>
+
+
                                 <button className='btn btn-primary float-end'>Continue</button>                                
                             </div>
                             </div>
                         </div>
 
 
-                        <div className="accordion-item">
+                        <div className="accordion-item COD-accod">
                             <h2 className="accordion-header d-flex" id="flush-headingThree">
-                            <img src={cashimg} alt="cashimg" />
+                            <img src={cashimg} className='cashimg' alt="cashimg" />
                             <button className="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                 Cash on Delivery
                             </button>

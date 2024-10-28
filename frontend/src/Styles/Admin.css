@@ -37,3 +37,15 @@
     border: none;
     border-radius: 6px;
 }
+
+
+@media only screen and (max-width: 400px){
+    .Admin-page{
+        height: 100vh;    
+        background: url(../assets/Adminbg3.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        overflow-x:hidden;
+    }
+}

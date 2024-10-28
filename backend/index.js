@@ -17,13 +17,7 @@ dotenv.config()
 
 // Ensure environment variable is correctly loaded
 
-const connectionString = process.env.MONGODB_CONNECTION_STRING;
-if (!connectionString) {
-  console.error("MongoDB connection string is missing. Please check your .env file.");
-  process.exit(1);
-}
-
-const client = new MongoClient(connectionString)
+const client = new MongoClient(process.env.MONGODB_CONNECTION_STRING)
 
 let ProductCollection;
 let CartCollection
@@ -34,6 +28,19 @@ const main = async () => {
         ProductCollection = client.db("projectdatabase").collection('products')
         CartCollection = client.db("projectdatabase").collection("carts")        
 }
+
+app.get('/', async (req,res) => {
+        try {
+                const products = await ProductCollection.find().toArray()
+                res.send({
+                   status :200,
+                   products  
+                })           
+             } catch (error) {
+                 res.status(500).json({ message: "Error fetching products" });    
+             }            
+})
+
 
 app.get("/products", async (req,res) => {
         try {

@@ -28,13 +28,13 @@ const Signup = () => {
   return (
      <div className="signup-page">
           <div className="container-signup">
-            <h1 className="mb-4 text-dark text-center">Signup Here !!</h1>
+            <h1>Signup Here !!</h1>
             <input onChange={(e)=>{setUser(e.target.value)}} className="input-signup"  placeholder="Enter your e-mail"></input>
             <br />
             <input onChange={(e)=>{setPass(e.target.value)}} className="input-signup" placeholder="Enter your Password"></input>
             <br />        
             <button onClick={Signupfunc} className="btn-signup" >Signup</button>
-            <p className="text-light para-signup">If you already have a account <Link className="text-dark fw-bold" to={'/'}>Login</Link> here</p>
+            <p className="para-signup">If you already have a account <Link className="text-dark fw-bold" to={'/'}>Login</Link> here</p>
           </div>
      </div>
     

@@ -1,22 +1,16 @@
-import React,{useState} from 'react'
+import React from 'react';
+import '../Styles/Sidebar.css';
+
 import Navlogo from "../assets/Trndy.png"
 import { signOut } from "firebase/auth"
 import auth from '../Config/firebase'
 import {Link, useNavigate} from "react-router-dom"
 import "./Navbar.css"
 import Swal from 'sweetalert2'
-import { GiHamburgerMenu } from "react-icons/gi";
-import Sidebar from './Sidebar'
 
 
-const Navbar = () => {
-    
-    const [sidebarOpen,setSidebarOpen] = useState(false)
+const Sidebar = ({ isOpen, toggleSidebar }) => {
 
-    const toggleSidebar = () => {
-        setSidebarOpen(!sidebarOpen)
-    }
-    
     const navigate = useNavigate()
 
     const handleLogout = ()=>{        
@@ -46,16 +40,14 @@ const Navbar = () => {
     }
 
 
+
+
   return (
-    <>
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark shadow-lg">
-            <div className="container-fluid nav-cont-1">
-                <Link to="/landing">
-                    <img className="navbar-brand img-fluid nav-logo" src={Navlogo} style={{height:"65px",width:"55px",marginLeft:"20px",borderRadius:"50%"}} />                    
-                </Link>
-                <h3 className='text-light float-end d-sm-none' onClick={toggleSidebar} ><GiHamburgerMenu /></h3>
-                <div className="collapse navbar-collapse d-lg-flex justify-content-end d-none" id="navbarNav" style={{width:"60%"}}>
-                    <ul className="navbar-nav" style={{gap:"35px"}}>
+    <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
+      <button className="close-btn" onClick={toggleSidebar}>
+        &times;
+      </button>
+                <ul className="navbar-nav">
                         <li className="nav-item">
                             <Link to="/landing" className='text-decoration-none'><h6 className="nav-link active text-warning" aria-current="page">Home</h6></Link>                                                                                                                                                   
                         </li>
@@ -77,13 +69,9 @@ const Navbar = () => {
                         <li className="nav-item">
                             <h6 className="badge text-light bg-danger rounded-pill pointer" onClick={handleLogout} aria-current="page">Logout</h6>
                         </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-    </>
-  )
-}
+                </ul>
+    </div>
+  );
+};
 
-export default Navbar
+export default Sidebar;
